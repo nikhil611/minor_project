@@ -1,2 +1,22 @@
-streamlit
-matplotlib
+# Core framework
+streamlit==1.39.0
+
+# Visualization
+plotly==5.24.1
+matplotlib==3.9.2
+
+# Data processing
+pandas==2.2.3
+numpy==1.26.4
+
+# LLM / AI utilities (if using OpenAI API or similar)
+openai==1.52.2
+
+# Environment and configuration
+python-dotenv==1.0.1
+
+# Optional - for smooth HTML/CSS styling and markdown rendering
+beautifulsoup4==4.12.3
+
+# Optional - for HTTP calls (if you fetch financial data from APIs)
+requests==2.32.3
