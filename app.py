@@ -121,3 +121,13 @@ if st.sidebar.button("Get Investment Advice"):
 
 else:
     st.info("👈 Fill out your details on the left and click **Get Investment Advice** to begin.")
+
+st.markdown(
+    """
+    <hr>
+    <p style='text-align:center; color:#6C757D; font-size:0.9rem;'>
+        © 2025 InvestSmartAI | Built with ❤️
+    </p>
+    """,
+    unsafe_allow_html=True,
+)
