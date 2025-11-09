@@ -20,3 +20,4 @@ beautifulsoup4==4.12.3
 
 # Optional - for HTTP calls (if you fetch financial data from APIs)
 requests==2.32.3
+markdown==3.5.4 
