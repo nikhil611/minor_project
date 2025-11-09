@@ -1,7 +1,18 @@
 [theme]
+# Default mode
 base="dark"
+
+# DARK THEME COLORS (same as yours)
 primaryColor="#00C896"
 backgroundColor="#0E1117"
 secondaryBackgroundColor="#1E222A"
 textColor="#FFFFFF"
+font="sans serif"
+
+# LIGHT THEME (auto-applied when toggled)
+[theme.light]
+primaryColor="#007F5F"                # deep emerald green
+backgroundColor="#F6F7FB"             # slightly grayish white, avoids glare
+secondaryBackgroundColor="#FFFFFF"    # clean white for cards/containers
+textColor="#111111"                   # deep neutral black for contrast
 font="sans serif"
