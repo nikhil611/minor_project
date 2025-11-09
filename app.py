@@ -21,8 +21,8 @@ if st.session_state.theme == "dark":
     accent = "#93993"
 else:
     background_color = "#FFFFFF"
-    secondary_bg = "#939393"
-    text_color = "#111111"
+    secondary_bg = "#C5C5C5"
+    text_color = "#0C605BFF"
     accent = "#007F5F"
 
 # ---------------- GLOBAL CSS ----------------
