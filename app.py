@@ -10,7 +10,7 @@ st.set_page_config(page_title="InvestSmartAI", page_icon="💼", layout="centere
 if "theme" not in st.session_state:
     st.session_state.theme = "dark"
 
-toggle = st.sidebar.toggle("🌗 Toggle Theme", value=(st.session_state.theme == "dark"))
+toggle = st.sidebar.toggle("🌗 Theme", value=(st.session_state.theme == "dark"))
 st.session_state.theme = "dark" if toggle else "light"
 
 # Theme Colors
