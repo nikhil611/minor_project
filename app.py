@@ -22,8 +22,8 @@ if st.session_state.theme == "dark":
 else:
     background_color = "#FFFFFF"
     secondary_bg = "#C5C5C5"
-    text_color = "#0C605BFF"
-    accent = "#007F5F"
+    text_color = "#003C9BF4"
+    accent = "#FEFEFE"
 
 # ---------------- GLOBAL CSS ----------------
 st.markdown(f"""
