@@ -3,10 +3,10 @@ import streamlit as st
 from rules import get_investment_allocation
 from utils import show_header, show_portfolio_chart, card
 
-# ---------------- CONFIG ----------------
+#config
 st.set_page_config(page_title="InvestSmartAI", page_icon="💼", layout="centered")
 
-# ---------------- THEME TOGGLE ----------------
+#Theme
 if "theme" not in st.session_state:
     st.session_state.theme = "dark"
 
@@ -25,7 +25,7 @@ else:
     text_color = "#003C9BF4"
     accent = "#FEFEFE"
 
-# ---------------- GLOBAL CSS ----------------
+# Style
 st.markdown(f"""
     <style>
         html, body, [class*="css"] {{
@@ -95,17 +95,17 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 
-# ---------------- HEADER ----------------
+# HEADER
 show_header()
 
-# ---------------- SIDEBAR ----------------
+# SIDEBAR 
 st.sidebar.header("Enter Your Details")
 age = st.sidebar.number_input("Age", min_value=18, max_value=100, value=25)
-income = st.sidebar.number_input("Monthly Income (₹)", min_value=1000, value=50000)
+income = st.sidebar.number_input("Monthly Income (₹)", min_value=0, value=100000000000000000000000000000000000000000)
 risk = st.sidebar.selectbox("Risk Appetite", ["Low", "Moderate", "High"])
 goal = st.sidebar.selectbox("Investment Goal", ["Short-term", "Long-term", "Retirement", "Wealth Creation"])
 
-# ---------------- MAIN LOGIC ----------------
+#  MAIN LOGIC
 if st.sidebar.button("Get Investment Advice"):
     alloc, invest_amt = get_investment_allocation(age, income, risk, goal)
 
